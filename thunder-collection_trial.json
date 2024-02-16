@@ -1,0 +1,243 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "trial",
+    "dateExported": "2024-02-16T12:09:42.096Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "79c71fdc-e335-45f5-b493-c44672a61490",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking_connection",
+            "url": "localhost:3000/search",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-15T11:03:16.631Z",
+            "modified": "2024-02-15T11:03:36.440Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ad654bbb-97b8-4e87-b5c3-2d986c8ae117",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking query string",
+            "url": "localhost:3000/search?q=smart",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-15T12:29:18.679Z",
+            "modified": "2024-02-15T12:44:47.660Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "smart",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "22043cd0-2ce6-4d81-98a7-3ed6ffcf3376",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "Checking search API",
+            "url": "localhost:3000/search?q=CasualCanvasBag",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-16T10:07:51.578Z",
+            "modified": "2024-02-16T10:12:03.351Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "CasualCanvasBag",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a906ae51-beec-4480-a701-e9e435d26fca",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking order api",
+            "url": "localhost:3000/order",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-16T10:13:42.456Z",
+            "modified": "2024-02-16T10:21:28.220Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "product_name",
+                        "value": "CasualCanvasBag"
+                    },
+                    {
+                        "name": "quantity",
+                        "value": "4"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a8a82ebd-d676-4525-94ee-a580a7546c6a",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking status api",
+            "url": "localhost:3000/status/202",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-16T10:18:43.355Z",
+            "modified": "2024-02-16T10:19:40.789Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0118f791-e5c2-4fae-b94e-ff18b3512e87",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking checkout",
+            "url": "localhost:3000/checkout",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-16T10:20:07.418Z",
+            "modified": "2024-02-16T10:27:05.528Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "product_id",
+                        "value": "202"
+                    },
+                    {
+                        "name": "quantity",
+                        "value": "4"
+                    },
+                    {
+                        "name": "product_name",
+                        "value": "BasicCurtainSet"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c91955b7-a84b-4880-85bd-a33d06c53454",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking get product",
+            "url": "localhost:3000/product/202",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-16T11:40:01.370Z",
+            "modified": "2024-02-16T11:42:31.726Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "90c935e7-087a-4195-bdd2-47e7a7864971",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking del product/id",
+            "url": "localhost:3000/products/202",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-02-16T11:41:32.620Z",
+            "modified": "2024-02-16T11:47:38.722Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e5c214bb-07dd-475f-ada6-12a9b476e5f1",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking cancel order",
+            "url": "localhost:3000/cancel/202",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-02-16T11:47:54.511Z",
+            "modified": "2024-02-16T11:59:19.720Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ae355d3-67f9-4e01-9d23-2144800224e3",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking post product ",
+            "url": "localhost:3000/products",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-16T12:01:06.049Z",
+            "modified": "2024-02-16T12:04:54.205Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "price",
+                        "value": "17.99"
+                    },
+                    {
+                        "name": "stocks",
+                        "value": "50"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "4.5"
+                    },
+                    {
+                        "name": "description",
+                        "value": "A fast charger for any c type device"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0fb8f3e5-9ec5-4328-b77e-2987c250335c",
+            "colId": "e57e05e6-0895-4d89-99c2-e84021cae965",
+            "containerId": "",
+            "name": "checking put product",
+            "url": "localhost:3000/products/924",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-02-16T12:05:43.717Z",
+            "modified": "2024-02-16T12:09:29.567Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "product_name",
+                        "value": "C-typecharger"
+                    },
+                    {
+                        "name": "product_id",
+                        "value": "924"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
